@@ -22,4 +22,3 @@ export function renderizarCatalogo() {
     }
 }
 
-// parei na aula 3 em 44m.
