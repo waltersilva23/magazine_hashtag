@@ -3,7 +3,7 @@ import { catalogo } from "./utilidades";
 
 export function renderizarCatalogo() {
     for (const produtoCatalogo of catalogo) {
-        const cartaoProduto = `<div class='border-solid w-48 m-2 flex flex-col p-2 justify-between shadow-xl shadow-slate-400 rounded-lg group ${produtoCatalogo.feminino}' id="card-produto-${produtoCatalogo.id}">
+        const cartaoProduto = `<div class='border-solid w-48 m-2 flex flex-col p-2 justify-between shadow-xl shadow-slate-400 rounded-lg group ${produtoCatalogo.feminino ? 'feminino' : 'masculino'}' id="card-produto-${produtoCatalogo.id}">
         <img 
         src="assets/img/${produtoCatalogo.imagem}" 
         alt="Produto 1 da Loja" class="group-hover:scale-110 duration-300 my-3 rounded-lg"
@@ -22,4 +22,3 @@ export function renderizarCatalogo() {
     }
 }
 
-// Parei com 30m de aula

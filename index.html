@@ -24,7 +24,21 @@
       <button class="mr-2"><i class="fa-solid fa-user"></i></button>
     </div>
   </header>
-  <main>
+  <main class="flex flex-col items-center ">
+    <section id="filtros" class="pt-10 flex">
+      <div class="px-2">
+        <input type="radio" name="filtro" id="exibir-todos" class="peer hidden" checked>
+        <label for="exibir-todos" class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer">Todos</label>
+      </div>
+      <div class="px-2">
+        <input type="radio" name="filtro" id="exibir-masculinos" class="peer hidden">
+        <label for="exibir-masculinos" class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer">Masculinos</label>
+      </div>
+      <div class="px-2">
+        <input type="radio" name="filtro" id="exibir-femininos" class="peer hidden">
+        <label for="exibir-femininos" class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer">Femininos</label>
+      </div>
+    </section>
     <section id="container-produto" class="flex flex-wrap p-10 justify-center gap-10">
       
     </section>
